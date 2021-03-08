@@ -13,6 +13,10 @@ export default class Map3D extends React.Component {
     
         map.addMapTiles('https://tile.openstreetmap.org/{z}/{x}/{y}.png');
         map.addGeoJSONTiles('https://{s}.data.osmbuildings.org/0.2/anonymous/tile/{z}/{x}/{y}.json');
+        map.addMarker({latitude: 64.129800, longitude: -21.942068, altitude: 10});
+        map.addMarker({latitude: 64.130600, longitude: -21.945268, altitude: 10});
+        map.addMarker({latitude: 64.131400, longitude: -21.949068, altitude: 10});
+        map.addMarker({latitude: 64.132200, longitude: -21.952868, altitude: 10});
         map.addOBJ(
             'http://localhost:3000/object/teapot',
             {
@@ -52,6 +56,6 @@ export default class Map3D extends React.Component {
     }
 
     render(){
-        return <div id="map3d"/>
+        return <div style={{height: "54vh", width: "50%"}} id="map3d"/>
     }
 }
