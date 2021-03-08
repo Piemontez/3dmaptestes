@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppService = void 0;
 const common_1 = require("@nestjs/common");
+const fs = require("fs");
 let AppService = class AppService {
-    getHello() {
-        return 'Hello World!';
+    getObj(filename) {
+        return fs.readFileSync(`obj/${filename}.obj`, 'utf-8');
     }
 };
 AppService = __decorate([

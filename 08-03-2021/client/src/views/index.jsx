@@ -5,9 +5,9 @@ import Map3D from '../map/map3d';
 class Index extends React.Component {
   render() {
     return <>
-      <div className="App">
+      {/* <div className="App">
         <Map/>
-      </div>
+      </div> */}
       <div className="nice">
         <Map3D/>
       </div>
