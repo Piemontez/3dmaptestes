@@ -8,9 +8,9 @@ export default class MyMap extends React.Component {
         const map = L.map("supermap").setView([-26.898497, -48.648715], 13);
        
         L.tileLayer.wms('http://localhost:8585/geoserver/wms?', {
-            //layers: 'a nice brazil'
+            layers: 'a nice brazil'
             //layers: 'beautiful brazil'
-            layers: 'sul'
+            //layers: 'sul'
         }).addTo(map);
 
         map.on("move", function () {
