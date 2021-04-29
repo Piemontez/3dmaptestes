@@ -8,10 +8,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppService = void 0;
 const common_1 = require("@nestjs/common");
+const axios_1 = require("axios");
 const fs = require("fs");
 let AppService = class AppService {
     getObj(filename) {
+        return fs.readFileSync(`obj/${filename}.obj`, 'utf-8');
+    }
+    getGltf(filename) {
         return fs.readFileSync(`obj/${filename}.gltf`, 'utf-8');
+    }
+    getGlb(filename) {
+        return fs.readFileSync(`obj/${filename}.glb`, 'utf-8');
+    }
+    async getMapTile(x, y, zoom) {
+        const response = await axios_1.default.get(`https://tile.openstreetmap.org/${zoom}/${x}/${y}.png`);
+        console.log(response.data);
+        return response.data;
     }
 };
 AppService = __decorate([

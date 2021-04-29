@@ -2,3 +2,29 @@
     height: 98vh;
     width: 100%;
 }
+
+.cesium-viewer-animationContainer{
+    display: none
+}
+
+.cesium-viewer-timelineContainer{
+    display: none
+}
+
+.cesium-viewer-bottom{
+    display: none
+}
+
+/*
+.cesium-toolbar-button{
+    display: none
+}
+*/
+
+.cesium-home-button{
+    display: none   
+}
+
+.cesium-sceneModePicker-wrapper{
+    display: none !important
+}

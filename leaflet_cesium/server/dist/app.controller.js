@@ -19,17 +19,37 @@ let AppController = class AppController {
     constructor(appService) {
         this.appService = appService;
     }
-    getHello(filename) {
+    getObj(filename) {
         return this.appService.getObj(filename);
+    }
+    getGltf(filename) {
+        return this.appService.getGltf(filename);
+    }
+    getGlb(filename) {
+        return this.appService.getGlb(filename);
     }
 };
 __decorate([
-    common_1.Get('object/:filename'),
+    common_1.Get('obj/:filename'),
     __param(0, common_1.Param('filename')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", String)
-], AppController.prototype, "getHello", null);
+], AppController.prototype, "getObj", null);
+__decorate([
+    common_1.Get('gltf/:filename'),
+    __param(0, common_1.Param('filename')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", String)
+], AppController.prototype, "getGltf", null);
+__decorate([
+    common_1.Get('glb/:filename'),
+    __param(0, common_1.Param('filename')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", String)
+], AppController.prototype, "getGlb", null);
 AppController = __decorate([
     common_1.Controller(),
     __metadata("design:paramtypes", [app_service_1.AppService])
