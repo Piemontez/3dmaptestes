@@ -4,6 +4,6 @@ import * as fs from 'fs';
 @Injectable()
 export class AppService {
   getObj(filename: string): string {
-    return fs.readFileSync(`obj/${filename}.obj`, 'utf-8');
+    return fs.readFileSync(`obj/${filename}`, 'utf-8');
   }
 }

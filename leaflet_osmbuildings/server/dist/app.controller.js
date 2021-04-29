@@ -24,7 +24,7 @@ let AppController = class AppController {
     }
 };
 __decorate([
-    common_1.Get('object/:filename'),
+    common_1.Get('obj/:filename'),
     __param(0, common_1.Param('filename')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),

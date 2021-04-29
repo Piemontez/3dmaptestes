@@ -8,9 +8,10 @@ class Index extends React.Component {
       {/* <div className="App">
         <Map/>
       </div> */}
-      <div className="nice">
+      <Map />
+      {/* <div className="nice">
         <Map3D/>
-      </div>
+      </div> */}
     </>
   }
 }

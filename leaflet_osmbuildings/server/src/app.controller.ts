@@ -5,7 +5,7 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('object/:filename')
+  @Get('obj/:filename')
   getHello(@Param('filename') filename: string): string {
     return this.appService.getObj(filename);
   }

@@ -1177,12 +1177,12 @@
         "affectsGlobalScope": false
       },
       "../src/app.service.ts": {
-        "version": "f5bc63731f4f8bd1928fdf94d217cd90d540f87833bca1a1e7574f5b307bc2e5",
+        "version": "c378bf868aa74ddb852b735561318948b68d04608ac954d186ed70bc6537c122",
         "signature": "169c83afea75cf4dd3e254680f6d6bcab7c1687bf67c78eb10699ad4edc4ea64",
         "affectsGlobalScope": false
       },
       "../src/app.controller.ts": {
-        "version": "12f2d2006b83d7a267e01b5bf9e1078e99e9071369dbead0bcb7b8f0bd867052",
+        "version": "227634a94dc2b1d9c7565c1417f389f2d034fb96b3ec3afed8b848f0dd0f4ab1",
         "signature": "3c8bb9a80597bfad9d58632f16c133b78251b56994acc91c1b817b629bf9e8c7",
         "affectsGlobalScope": false
       },

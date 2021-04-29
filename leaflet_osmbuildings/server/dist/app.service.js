@@ -11,7 +11,7 @@ const common_1 = require("@nestjs/common");
 const fs = require("fs");
 let AppService = class AppService {
     getObj(filename) {
-        return fs.readFileSync(`obj/${filename}.obj`, 'utf-8');
+        return fs.readFileSync(`obj/${filename}`, 'utf-8');
     }
 };
 AppService = __decorate([
